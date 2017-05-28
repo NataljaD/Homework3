@@ -1,5 +1,9 @@
-db.people.update({
-    name:'Dusti Lemmond'
+db.students.update({
+	'name':'Dusti Lemmond'
 }, {
-    $set: {'accepted': true}
+	$set: {
+	'accepted': true
+	}
+},{
+	multi: true
 })
